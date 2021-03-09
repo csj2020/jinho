@@ -70,7 +70,7 @@ if __name__ == "__main__":
         os.remove(filename)
 
     url = "http://openapi.molit.go.kr:8081/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTrade?"
-    serviceKey = "jlezFfeKU0KiWgXB2GtMxpSK6Rt%2F6oE1Ot4C5UMTjqDDOnCnbJ2oJEkxJ%2Fe2G6ZZPugcoEpS%2By9nTy3zefOZiw%3D%3D"
+    serviceKey = ""
     base_date = "202008"
     gu_code = "11650"
     numrow = 1000
