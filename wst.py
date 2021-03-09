@@ -34,13 +34,12 @@ def get_weather_data(x, y):
     url = "http://apis.data.go.kr/1360000/VilageFcstInfoService/getVilageFcst?"
     key = (
         "serviceKey="
-        + "%2FKmMCVQsc00Z1K0UN%2FRo5XbVIroiF%2Fb2bZ47XJ8LoLCdv6LOnHETW6aY0aNS5wJL9vlw9XNgCokdH11cVx%2FINA%3D%3D"
+        + ""
     )
     numofrows = "&numOfRows=" + "10"
     pageno = "&pageNo=" + "1"
     base_date = "&base_date=" + api_date
     base_time = "&base_time=" + api_time
-    #http://apis.data.go.kr/1360000/VilageFcstInfoService/getVilageFcst?serviceKey=%2FKmMCVQsc00Z1K0UN%2FRo5XbVIroiF%2Fb2bZ47XJ8LoLCdv6LOnHETW6aY0aNS5wJL9vlw9XNgCokdH11cVx%2FINA%3D%3D&numOfRows=10&pageNo=1&base_date=20200725&base_time=2000&nx=61&ny=124&dataType=json
     if x == 0 and y == 0:
         nx = "&nx=" + "61"
         ny = "&ny=" + "126"
@@ -341,7 +340,7 @@ def main():
 if __name__ == "__main__":
 
     # ChatBot
-    my_token = '1215765058:AAG68ELcpZ3nYsWOcN88r6m8N4svbb6_lmo'
+    my_token = '...'
     #updater  = Updater(my_token, use_context=True)
     updater  = Updater(my_token)
     jhbot    = telegram.Bot(my_token)
